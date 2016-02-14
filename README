@@ -3,6 +3,10 @@ DESIGN PATTERNS
 This project has as purpose to explain all design patterns with simple examples;
 
 
+SINGLETON DESIGN PATTERN
+
+It is used when you want to eliminate the possibility of instantiation more than one object of kind.
+
 STRATEGY DESIGN PATTERN
 
 The strategy pattern allow us configure class to use one of many behavior available.
