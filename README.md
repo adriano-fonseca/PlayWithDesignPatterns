@@ -62,13 +62,13 @@ See the code:
     /*Receive SoundGroup*/
     industrialMusic.add(dubstepMusic);
     everySong.add(industrialMusic);
-    
     DiscJockey crazyLarry = new DiscJockey(everySong);
- ``` 
-    
-    See the constructor os DiscJockey:
+```    
 
-```java    
+See the constructor sighnature of DiscJockey.
+
+
+```java	 	
      public DiscJockey(SongComponent newSongList)
 ```     
 
