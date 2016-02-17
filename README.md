@@ -1,13 +1,13 @@
-DESIGN PATTERNS
+# DESIGN PATTERNS
 
 This project has as purpose to explain all design patterns with simple examples;
 
 
-SINGLETON DESIGN PATTERN
+# SINGLETON DESIGN PATTERN
 
 It is used when you want to eliminate the possibility of instantiation more than one object of kind.
 
-STRATEGY DESIGN PATTERN
+# STRATEGY DESIGN PATTERN
 
 The strategy pattern allow us configure class to use one of many behavior available.
 In order to use composition, we need put interfaces to work in a unconventional way, having it as variable of superclass.
@@ -17,7 +17,7 @@ the behavior for one specific subclass. We will do that in the constructor metho
 This is possible through the composite concept.
 
 
-FACACE DESIGN PATTERN
+# FACACE DESIGN PATTERN
 
 Basically FACADE is when you have a simplified "interface" and many others actions performing behind the scene;
 
@@ -29,12 +29,12 @@ EX: Can I withdrawal $50 from my bank account?
 - And then, make changes in balance properly;
 
 
-PROXY DESIGN PATTERN
+# PROXY DESIGN PATTERN
 
 The Proxy design pattern limits access to just the methods you want made accessible in another class.
 It can be used for security reasons, because an Object is intensive to create, or is accessed from a remote location. You can think of it as a gate keeper that blocks access to another Object. 
  
-COMPOSITE DESIGN PATTERN
+# COMPOSITE DESIGN PATTERN
  
 The Composite design pattern is used to structure data into its individual parts as well as represent the inner workings of every part of a larger object.
 The composite pattern also allows you to treat both groups of parts in the same way as you treat the parts polymorphically. This allows your objects
@@ -50,25 +50,29 @@ DiscJockey - this class is going to be a songList(SongComponent);
 In our example code  we will have:
 	IndustrialMusic {music A, music B and DubstepMusic{music C, music D)}
 
-See the code:	
+See the code:
+```java	
 	SongComponent everySong = new SongGroup("Song List", "Every Song Available");
 	SongComponent industrialMusic = new SongGroup("\nIndustrialMusic",  "is a genre ...");
     SongComponent dubstepMusic = new SongGroup("\nDubstep",  "is a genre ...");
     
-    //Receive Song
+    /*Receive Song*/
     industrialMusic.add(new Song("Headhunter", "Front 242", 1988));
-    
-    //Receive SoundGroup
+   
+    /*Receive SoundGroup*/
     industrialMusic.add(dubstepMusic);
     everySong.add(industrialMusic);
     
     DiscJockey crazyLarry = new DiscJockey(everySong);
+ ``` 
     
     See the constructor os DiscJockey:
-    
+
+```java    
      public DiscJockey(SongComponent newSongList)
+```     
 
 	
 This is only possible because through the polymorphism we have used Composite Design Pattern. 
- .
+ 
 
