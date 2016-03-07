@@ -2,13 +2,6 @@
 
 This project has as purpose to explain all design patterns with simple examples;
 
-
-# Chain of Responsibility Design Pattern
-
-It is used in order to avoid bunch of if else blocks. Basically we are going to have classes responsible to handle
-with a specific problem and if it was not capable to resolve that, it will past the problem for the next member of the chain.  Here it was implemented using an interface, but we could use one abstract class though.
-
-
 # SINGLETON DESIGN PATTERN
 
 It is used when you want to eliminate the possibility of instantiation more than one object of kind.
@@ -68,17 +61,21 @@ See the code:
     /*Receive SoundGroup*/
     industrialMusic.add(dubstepMusic);
     everySong.add(industrialMusic);
-    
     DiscJockey crazyLarry = new DiscJockey(everySong);
- ``` 
-    
-    See the constructor os DiscJockey:
+```    
 
-```java    
+See the constructor sighnature of DiscJockey.
+
+
+```java	 	
+>>>>>>> refs/remotes/origin/master
      public DiscJockey(SongComponent newSongList)
 ```     
 
 	
 This is only possible because through the polymorphism we have used Composite Design Pattern. 
  
+# Chain of Responsibility Design Pattern
 
+It is used in order to avoid bunch of if else blocks. Basically we are going to have classes responsible to handle
+with a specific problem and if it was not capable to resolve that, it will past the problem for the next member of the chain.  Here it was implemented using an interface, but we could use one abstract class though.
