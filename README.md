@@ -36,8 +36,7 @@ It can be used for security reasons, because an Object is intensive to create, o
 # COMPOSITE DESIGN PATTERN
  
 The Composite design pattern is used to structure data into its individual parts as well as represent the inner workings of every part of a larger object.
-The composite pattern also allows you to treat both groups of parts in the same way as you treat the parts polymorphically. This allows your objects
-to maximize complexity while also remaining dynamic.
+The composite pattern also allows you to treat both groups of parts in the same way as you treat the parts polymorphically. This allows your objects to maximize complexity while also remaining dynamic.
 
 Song (concrete class) - extend the songComponent abstract class, it has name, band, release;
 SongComponent (abstract class) - it is a abstract class that has all methods (add, remove, display song info, name, etc)
@@ -68,7 +67,6 @@ See the constructor sighnature of DiscJockey.
 
 
 ```java	 	
->>>>>>> refs/remotes/origin/master
      public DiscJockey(SongComponent newSongList)
 ```     
 
@@ -79,3 +77,12 @@ This is only possible because through the polymorphism we have used Composite De
 
 It is used in order to avoid bunch of if else blocks. Basically we are going to have classes responsible to handle
 with a specific problem and if it was not capable to resolve that, it will past the problem for the next member of the chain.  Here it was implemented using an interface, but we could use one abstract class though.
+
+# Visitor Design Pattern
+
+The Visitor design pattern allows you to add methods to classes of different types without much altering to those classes. You can make completely different methods depending on the class used with this pattern.
+
+# Builder Design Pattern
+
+The Builder pattern has variants, but as it was implemented here could be used instead to have a lot of different constructors. Its a good way to protected the object from changes after it has been build.
+
