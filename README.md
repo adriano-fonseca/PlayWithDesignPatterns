@@ -86,3 +86,7 @@ The Visitor design pattern allows you to add methods to classes of different typ
 
 The Builder pattern has variants, but as it was implemented here could be used instead to have a lot of different constructors. Its a good way to protected the object from changes after it has been build.
 
+# Abstract Factory Design Pattern
+
+The Abstract Factory is used when you need to create objects dynamically, these objects can have different compositions. Basically we have a role call Building who receives the orders and forward them to proper factory, which will built and return it.
+
