@@ -10,10 +10,12 @@ It is used when you want to eliminate the possibility of instantiation more than
 
 The strategy pattern allow us configure class to use one of many behavior available.
 In order to use composition, we need put interfaces to work in a unconventional way, having it as variable of superclass.
-Through the polymorphism, we shall define a properly behavior setting which class that (implement the interface of the concept encapsulated) is responsible for supply
-the behavior for one specific subclass. We will do that in the constructor method of the subclass.   
-
+Through the polymorphism, we shall define a properly behavior setting which class that (implement the interface of the concept encapsulated) is responsible for supply the behavior for one specific subclass. We will do that in the constructor method of the subclass.   
 This is possible through the composite concept.
+
+Conditional logic is often used to decide which algorithm to use.
+The strategy design pattern is used to dynamically change the algorithm used by an object at run time which makes it great for eliminating conditionals.
+You can see this patern in action eliminating conditional statement in class ReplaceConditionalWithStrategy inside the package com.company.app.strategy.test.
 
 
 # FACACE DESIGN PATTERN
