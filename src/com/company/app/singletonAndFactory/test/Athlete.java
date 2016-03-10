@@ -1,4 +1,4 @@
-package com.company.app.test;
+package com.company.app.singletonAndFactory.test;
 
 import java.lang.reflect.Method;
 //Create a Factory that creates singletons
@@ -143,10 +143,12 @@ static class TestMedalWinner {
     public static void main(String[] args) {
 
       MedalFactory medalFactory = new MedalFactory();
+      
+      final String PACKAGEPATH = "com.company.app.singletonAndFactory.test."; 
            
-      StringBuilder goldWinnerClassName = new StringBuilder("com.company.app.test."+"GoldWinner");
-      StringBuilder silverWinnerClassName = new StringBuilder("com.company.app.test."+"SilverWinner");
-      StringBuilder bronzeWinnerClassName = new StringBuilder("com.company.app.test."+"BronzeWinner");
+      StringBuilder goldWinnerClassName = new StringBuilder(PACKAGEPATH+"GoldWinner");
+      StringBuilder silverWinnerClassName = new StringBuilder(PACKAGEPATH+"SilverWinner");
+      StringBuilder bronzeWinnerClassName = new StringBuilder(PACKAGEPATH+"BronzeWinner");
       
       
       Athlete goldWinner = medalFactory.getMedal(goldWinnerClassName.toString(), "Dave Thomas");
