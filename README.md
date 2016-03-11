@@ -92,3 +92,7 @@ The Builder pattern has variants, but as it was implemented here could be used i
 
 The Abstract Factory is used when you need to create objects dynamically, these objects can have different compositions. Basically we have a role call Building who receives the orders and forward them to proper factory, which will built and return it.
 
+# Decorator Design Pattern
+
+When new features are needed it is a bad idea to add new code to older classes. This would make compact easy to understand classes complicated because they would break the Single responsibility principle.
+By using the decorator pattern a SOLID principle are being respect, the Interface segregation principle, by using many specific interfaces rather than one general purpose interface.
