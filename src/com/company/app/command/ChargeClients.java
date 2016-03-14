@@ -11,7 +11,6 @@ public class ChargeClients {
     // executeCalculateBill method is called
     Waiter theWaiter = new Waiter(sallyMay);
     
-
     // The invoker makes sure the right method is called and
     // stores the Waiter so BillPayers assigned to Waiter
     // are available
@@ -22,24 +21,17 @@ public class ChargeClients {
     // Waiter stored in CashRegister should execute method
     // executeCalculateBill
     calculateBill.returnFinalBill(12.00);
-
-    
+       
     BillPayer paulThumb = CustomerTypePicker.getManOver60();
-    NiceWaiter niceWaiter = new NiceWaiter(paulThumb);
-
-    calculateBill = new CashRegister(niceWaiter);
-    calculateBill.returnFinalBill(12.00);
-    calculateBill.isGiveAwayDeliver(12.00);
-
+    theWaiter = new Waiter(paulThumb);
+    
     // Call commands from the BillPayer ArrayList
-
     CustomerGroup custGroup = new CustomerGroup();
     custGroup.add(CustomerTypePicker.getWomanOver60());
     custGroup.add(CustomerTypePicker.getManUnder60());
     
     custGroup.get(0).calculateBill(12.00);
     custGroup.get(1).calculateBill(12.00);
-
   }
 
 }

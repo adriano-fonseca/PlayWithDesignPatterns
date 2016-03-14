@@ -10,22 +10,13 @@ package com.company.app.command;
 
 class CashRegister {
 
-  Command theCommand;
+  CommandCalculateBill theCommand;
     
   CashRegister(CommandCalculateBill newCommand) {
     theCommand = newCommand;
   }
   
-  CashRegister(CommandDeliverGiveaways newCommand) {
-    theCommand = newCommand;
-  }
-
   public void returnFinalBill(double amountDue) {
-      ((CommandCalculateBill) theCommand).executeCalculateBill(amountDue);
+      theCommand.executeCalculateBill(amountDue);
   }
-  
-  public void isGiveAwayDeliver(double amountDue) {
-    ((CommandDeliverGiveaways) theCommand).deliverGiveaways(amountDue);
-  }
-
 }
